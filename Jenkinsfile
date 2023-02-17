@@ -5,7 +5,6 @@ pipeline {
     stage('Build') {
       steps {
         sh 'g++ working.cpp -o working'
-        build job: "PES2UG20CS531", wait: true
       }
     }
    
@@ -16,7 +15,8 @@ pipeline {
     }
    
     stage('Deploy') {
-      steps {}
+      steps {
+      }
     }
   }
  
